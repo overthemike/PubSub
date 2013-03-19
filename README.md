@@ -1,6 +1,6 @@
 #Pub-Sub
 
-Lightweight pubsub with a few nice features.
+Lightweight (less than .5k) pubsub with a few nice features.
 
 There are two versions - pubsub and pubsub.sep (along with their jQuery counterparts). The difference between the two is the publish method and how it is called. It's really a matter of preference which you choose as they both work in a very similar way. The documentation for these two different implentations will only differ on the publish method(s) - everything else is the same.
 
