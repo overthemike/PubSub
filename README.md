@@ -29,7 +29,7 @@ One of the most common examples of why you would want to use a synchronous publi
 
 Example:
 
-    I.publish("myEvent"); // async publish
+    I.publish("myEvent"); // async publish by default
     I.subscribe("myEvent", function(){
       console.log("myEvent was fired."); // this won't happen
     });
@@ -37,8 +37,8 @@ Example:
 
 In the above example, the console.log will never happen unelss that event is published again in the future. The way to get around this is to use a synchronous publish:
 
-    I.publish("myEvent", { // sync publish
-      sync:true
+    I.publish("myEvent", { 
+      sync:true // sync publish
     });
     I.subscribe("myEvent", function(){
       console.log("myEvent was fired"); // this will hapen
