@@ -41,7 +41,7 @@ In the above example, the console.log will never happen unelss that event is pub
       sync:true // sync publish
     });
     I.subscribe("myEvent", function(){
-      console.log("myEvent was fired"); // this will hapen
+      console.log("myEvent was fired"); // this will happen
     });
 
 
