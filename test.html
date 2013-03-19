@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head></head>
+  <body>
+    <script src="pubsub.js"></script>
+    <script>
+      var test1 = I.subscribe('test1', function(){
+        console.log('test1 fired');
+      });
+      
+      var test2 = I.subscribe('test2', function(){
+        console.log('test2 fired');
+      });
+
+      I.subscribeOnce('test3', function(){
+        console.log('test3 fired');
+      });
+
+      I.publish('test1');
+      I.publish('test2');
+      I.publish('test3');
+      I.unsubscribe(test1);
+      I.publish('test1');
+      I.publish('test2');
+      I.publish('test3');
+      I.unsubscribe(test2);
+      I.publish('test1');
+      I.publish('test2');
+      I.publish('test3');
+    </script>
+  </body>
+</html>

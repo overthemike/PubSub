@@ -74,7 +74,7 @@ When you subscribe to an event, you can create a handle that will have the abili
     
 Once you create this handle, you can use it to unsubscribe that specfic callback from the event pool.
 
-    handle.unsubscribe();
+    I.unsubscribe(handle);
     
 ###Subscribing once
 
@@ -99,6 +99,6 @@ There is also a jquery plugin version of this included in the repo. All of the u
     
     $.publish('myEvent');
     
-    handle.unsubscribe();
+    $.unsubscribe(handle);
     
     // etc.

@@ -107,10 +107,11 @@
       i = cache[t].length - 1;
 
     if (cache[t]) {
-      for (i; i >= 0; i -= 1) {
+      while (i >= 0) {
         if (cache[t][i] === handle[1]) {
           cache[t].splice(cache[t][i], 1);
         }
+        i -= 1;
       }
     }
   };
