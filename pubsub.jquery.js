@@ -18,7 +18,7 @@
      * @param {object.bool} sync Make synchronous. This is used to make sure
      *   that the published event is allowing for all subscribers to know that
      *   the event was published. Typical use for this would be when an event
-     *   is to be published when the app loads and a sandbox.publish call is
+     *   is to be published when the app loads and a publish call is
      *   made before a subscriber has a chance to subscribe to it.
      */
     'publish' : function (topic, options) {
@@ -47,7 +47,7 @@
 
     /**
      * Subscribes to an event and stores the callback for later use (when the
-     * event is called via sandbox.publish).
+     * event is called via publish).
      *
      * Example:
      *   var handle = jQuery.subscribe("myEvent", function() {
