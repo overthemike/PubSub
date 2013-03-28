@@ -51,7 +51,7 @@
 
   /**
    * Subscribes to an event and stores the callback for later use (when the
-   * event is called via ublish).
+   * event is called via publish).
    *
    * Example:
    *   var handle = I.subscribe("myEvent", function() {
