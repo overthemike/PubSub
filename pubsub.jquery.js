@@ -105,7 +105,7 @@
       if (cache[t]) {
         while (i--) {
           if (cache[t][i] === handle[1]) {
-            cache[t].splice(cache[t][i], 1);
+            cache[t].splice(i, 1);
           }
         }
       }
